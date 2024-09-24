@@ -12,30 +12,31 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-     <nav class="nav sticky top-0">
-        <div class="all-nav pt-10 pb-10">
-            <div class="btn-nav">
-                <button id="btn-login" class="btn bg-lime-400">Blog</button>
+    <nav class="bg-nav sticky top-0">
+        <div class="navbar p-10">
+            <div class="navbar-start ml-10">
+              <button id="btn-login" class="btn text-black bg-lime-500">Blog</button>
             </div>
-            <div class="donate-nav flex">
-                <img src="./assets/logo (1).png" alt="donation logo">
-                <h3 class="font-bold">Donate Bangladesh</h3>
+            <div class="navbar-center space-x-3">
+              <img src="./assets/logo (1).png" alt="">
+              <h2 class="text-black font-semibold text-2xl">Donate Bangladesh</h2>
             </div>
-            <div class="bdt-nav flex space-x-2">
-                <img src="./assets/coin.png" alt="coin pic">
-                <p class="font-semibold">6985 BDT</p>
+            <div class="navbar-end space-x-1 mr-10">
+              <img src="./assets/coin.png" alt="">
+              <h2 id="account-balance" class="font-semibold text-xl">6890</h2>
+              <p class="text-lg">BDT</p>
             </div>
-        </div>
-     </nav>
+          </div>
+    </nav>
      <!-- button form start -->
-      <div class="mt-20 mb-10 flex justify-center space-x-3 sticky top-52">
-        <button class="btn btn-lg">Donation</button>
+      <div class="mt-20 mb-20 flex justify-center space-x-3 sticky top-52">
+        <button id="show-noakhali-form" class="btn btn-lg">Donation</button>
         <button class="btn btn-lg">History</button>
       </div>
      <!-- button form end -->
 
       <!-- Noakhali donate card/ -->
-      <div class="donate-noa mx-10  md:mx-32 mb-10 grid grid-cols-1 md:grid-cols-2 border  border-gray-200 p-4 ">
+      <div id="noakhali-form" class="donate-noa mx-10  md:mx-32 mb-10 grid grid-cols-1 md:grid-cols-2 border  border-gray-200 p-4 ">
         <div class="">
             <img src="./assets/noakhali.png" alt="">
         </div>
@@ -43,13 +44,14 @@
             <div class="space-y-5">                
                 <div class="flex gap-5 mt-12 md:mt-5">
                     <img src="./assets/coin.png" alt="">
-                    <p>6000 BDT</p>
+                    <h2 id="donated-noakhali">6000</h2>
+                    <p>BDT</p>
                 </div>
                 <h2 class="text-xl font-bold">Donate fo Flood at Noakhali,Bangladesh</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit at explicabo excepturi voluptates dolorem esse quia ex eos nostrum, iusto dicta quaerat deleniti voluptate facere architecto nesciunt voluptatibus. Vel, odio.</p>
-                <input class="amount border border-gray-200 w-full p-3" type="text" placeholder="Write Donation Amount" width="50">
+                <input id="noakhali-amount" class="amount border border-gray-200 w-full p-3" type="text" placeholder="Write Donation Amount" width="50">
                 <div>
-                    <button class="btn btn-wide w-full bg-lime-400">Donate Now</button>
+                    <button id="btn-noakhali" class="btn btn-wide w-full bg-lime-400">Donate Now</button>
                 </div>
             </div>
         </div>
@@ -99,6 +101,9 @@
         </div>
       </div>
       <!-- Quota card -->
+       <script src="js/utilities.js"></script>
        <script src="js/login.js"></script>
+       <script src="js/utilities.js"></script>
+       <script src="js/noakhali.js"></script>
 </body>
 </html>
