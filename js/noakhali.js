@@ -30,11 +30,10 @@ document.getElementById('btn-noakhali')
              const now = new Date();
              const currentDateTime = now.toLocaleString();
              div.innerHTML = `
-                 <h4 class="text-2xl font-bold text-black">${amount} Taka is Donated for famine-2024 at Feni, Bangladesh</h4>
-                 <p>${currentDateTime}</p>
+                 <h4 class="text-2xl font-bold text-black">${amount} Taka is Donated for famine-2024 at Noakhali, Bangladesh</h4>
+                 <p class="text-gray-500">Date:${currentDateTime} GMT +0600 (Bangladesh Standard Time)</p>
             `
             
- 
              document.getElementById('transaction-container').appendChild(div);
         }
     });
