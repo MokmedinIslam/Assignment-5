@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="nav sticky top-0">
+        <div class="all-nav pt-10 pb-10">
+            <div class="btn-nav">
+                <button id="btn-blog" class="btn bg-lime-400">Home</button>
+            </div>
+            <div class="donate-nav flex">
+                <img src="./assets/logo (1).png" alt="donation logo">
+                <h3 class=" nav-donate font-bold">Donate Bangladesh</h3>
+            </div>
+            <div class="bdt-nav flex space-x-2">
+                <img src="./assets/coin.png" alt="coin pic">
+                <p class="font-semibold">6985 BDT</p>
+            </div>
+        </div>
+     </nav>
+     <main>
+        <h1 class="text-2xl font-bold m-10">Important FAQ</h1>
+        <div class="m-10 md:m-16">
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                  <p>The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web.</p>
+                </div>
+              </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p>1. Using getElementById: The getElementById method         allows   you to select an element by its ID.
+                     2. Using getElementsByClassName: The getElementsByClassName method allows you to select all by its class.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element. Instead of attaching a click handler to each item, event delegation allows you to attach a single listener to the parent container.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p> If you want to change other attributes like id , href , or src , you can use the setAttribute() method. </p>
+                </div>
+              </div>
+        </div>
+     <script src="js/blog.js"></script>
+</body>
+</html>

@@ -12,10 +12,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-     <nav class="nav">
+     <nav class="nav sticky top-0">
         <div class="all-nav pt-10 pb-10">
             <div class="btn-nav">
-                <button class="btn bg-lime-400">Blog</button>
+                <button id="btn-login" class="btn bg-lime-400">Blog</button>
             </div>
             <div class="donate-nav flex">
                 <img src="./assets/logo (1).png" alt="donation logo">
@@ -28,7 +28,7 @@
         </div>
      </nav>
      <!-- button form start -->
-      <div class="mt-20 mb-10 flex justify-center space-x-3">
+      <div class="mt-20 mb-10 flex justify-center space-x-3 sticky top-52">
         <button class="btn btn-lg">Donation</button>
         <button class="btn btn-lg">History</button>
       </div>
@@ -99,5 +99,6 @@
         </div>
       </div>
       <!-- Quota card -->
+       <script src="js/login.js"></script>
 </body>
 </html>

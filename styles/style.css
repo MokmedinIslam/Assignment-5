@@ -6,6 +6,9 @@
     display: flex;
     justify-content: space-around;
 }
+.nav-donate{
+    justify-content: center;
+}
 .donate-noa{
     border-radius: 15px;
 }
