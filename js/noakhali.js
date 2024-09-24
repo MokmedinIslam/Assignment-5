@@ -21,7 +21,7 @@ document.getElementById('btn-noakhali')
             const donate = getTextFieldValueById('donated-noakhali');
             const totalDonate = donate + amount;
             document.getElementById('donated-noakhali').innerText = totalDonate;
-            const currentBalance = balance - donate;
+            const currentBalance = balance - amount;
             document.getElementById('account-balance').innerText = currentBalance;
         }
     });
