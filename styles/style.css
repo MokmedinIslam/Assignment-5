@@ -1,0 +1,14 @@
+/* nav style */
+.nav{
+    background: rgb(252, 255, 238);
+}
+.all-nav{
+    display: flex;
+    justify-content: space-around;
+}
+.donate-noa{
+    border-radius: 15px;
+}
+.amount{
+    border-radius: 10px;
+}
