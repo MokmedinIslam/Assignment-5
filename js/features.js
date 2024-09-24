@@ -1,15 +1,10 @@
-document.getElementById('')
+document.getElementById('show-donation-section')
     .addEventListener('click', function(){
-        showSectionById('noakhali-form');
+        showSectionById('donation-section');
     });
 
 
-document.getElementById('')
+document.getElementById('show-transaction-section')
     .addEventListener('click', function(){
-        showSectionById('feni-form');
+        showSectionById('transaction-section');
     });
-document.getElementById('')
-    .addEventListener('click', function(){
-        showSectionById('quota-form');
-    });
-

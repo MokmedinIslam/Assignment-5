@@ -25,3 +25,4 @@ document.getElementById('btn-quota')
             document.getElementById('account-balance').innerText = currentBalance;
         }
     });
+

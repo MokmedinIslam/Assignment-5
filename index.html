@@ -30,12 +30,13 @@
     </nav>
      <!-- button form start -->
       <div class="mt-20 mb-20 flex justify-center space-x-3 sticky top-52">
-        <button id="" class="btn btn-lg">Donation</button>
+        <button id="show-donation-section" class="btn btn-lg">Donation</button>
         <button id="show-transaction-section" class="btn btn-lg">History</button>
       </div>
      <!-- button form end -->
 
-      <!-- Noakhali donate card/ -->
+      <div id="donation-section">
+              <!-- Noakhali donate card/ -->
       <div id="noakhali-form" class="donate-noa mx-10  md:mx-32 mb-10 grid grid-cols-1 md:grid-cols-2 border  border-gray-200 p-4 ">
         <div class="">
             <img src="./assets/noakhali.png" alt="">
@@ -103,16 +104,15 @@
         </div>
       </div>
       <!-- Quota card -->
+      </div>
 
       <!-- transaction start -->
       <div id="transaction-section" class="hidden">
-        <h class="text-3xl text-center">Transaction History</h>
-        <div id="transaction-container" class="space-y-3">
-
+        <div id="transaction-container" class="pl-10 md:pl-20 space-y-3">
         </div>
-    </div>
+      </div>
    <!-- transaction end -->
-       <script src="js/utilities.js"></script>
+       <script src="js/features.js"></script>
        <script src="js/login.js"></script>
        <script src="js/utilities.js"></script>
        <script src="js/noakhali.js"></script>

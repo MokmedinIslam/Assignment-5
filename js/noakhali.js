@@ -23,5 +23,18 @@ document.getElementById('btn-noakhali')
             document.getElementById('donated-noakhali').innerText = totalDonate;
             const currentBalance = balance - amount;
             document.getElementById('account-balance').innerText = currentBalance;
+
+             // add to transaction history
+             const div = document.createElement('div');
+             div.classList.add('text-left');
+             const now = new Date();
+             const currentDateTime = now.toLocaleString();
+             div.innerHTML = `
+                 <h4 class="text-2xl font-bold text-black">${amount} Taka is Donated for famine-2024 at Feni, Bangladesh</h4>
+                 <p>${currentDateTime}</p>
+            `
+            
+ 
+             document.getElementById('transaction-container').appendChild(div);
         }
     });
