@@ -34,5 +34,6 @@ document.getElementById('btn-feni')
                 <p class="text-gray-500">Date:${currentDateTime} GMT +0600 (Bangladesh Standard Time)</p>
            `
             document.getElementById('transaction-container').appendChild(div);
+            document.getElementById('my_modal_1').showModal();
         }
     });
